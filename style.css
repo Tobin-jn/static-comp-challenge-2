@@ -1,0 +1,85 @@
+body {
+  background-color: beige; 
+   border: 2px solid red;
+}
+
+.user-login {
+  background-color: yellow;
+   border: 2px solid black;
+}
+
+/* ====Login bar==== */
+.user-login {
+  display: flex;
+  flex-direction: row-reverse;
+   border: 2px solid black;
+
+}
+
+/* ======= navbar======= */
+.nav-bar-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr)
+ 
+}
+.link1 {
+  background-color: gray;
+   border: 2px solid black;
+}
+.link2 {
+  background-color: pink;
+   border: 2px solid black;
+}
+.link3 {
+  background-color: green;
+   border: 2px solid black;
+}
+.logobox {
+  background-color: gray;
+   border: 2px solid black;
+}
+
+/*=====header=======*/
+h1 {
+  background-color: yellow;
+   border: 2px solid black;
+}
+
+
+
+/* ===============cards============= */
+
+.grid-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+   border: 2px solid black;
+}
+.card-one {
+  border: 2px solid black;
+  grid-column: 1 / 2;
+}
+
+
+}
+.top-pic {
+  display: flex;
+   border: 2px solid black;
+}
+
+.card-info-flex {
+  display: flex;
+  flex-direction: column;
+   border: 2px solid blue;
+}
+.name {
+   border: 2px solid black;
+}
+.link {
+   border: 2px solid green;
+ }
+.description {
+   border: 2px solid black;
+ }
+.date {
+   border: 2px solid red;
+ }
