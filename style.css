@@ -6,18 +6,24 @@
 }
 
 body {
-  background-color: beige; 
-   border: 2px solid red;
+  /*background-color: beige; */
+   /*border: 2px solid red;*/
+   color: #525353;
 }
 
 h4 {
-    font-size: 1.3rem;
-    padding: 7px;
+  font-size: 2.2rem;;
+  padding: 6px 10px 2px;
+}
+
+.b-l-dinner {
+  font-size: 1.1rem;
+  padding: 0px 11px;;
 }
 
 .user-login {
-  background-color: yellow;
-   border: 2px solid black;
+  background-color: #13232A;
+/*   border: 2px solid black;*/
 }
 
 /* ====Login bar==== */
@@ -26,7 +32,7 @@ h4 {
   display: grid;
   grid-template-columns: 80% 5% 10% 5%;
   grid-template-rows: 30px;
-  border: 2px solid black;
+/*  border: 2px solid black;*/
 
 }
 .user-icon {
@@ -39,12 +45,12 @@ h4 {
   font-size: .8rem;
   justify-self: center;
   grid-column: 3;
-
+  color: #FFFFFF;
 }
 
 .dropdown-icon {
- grid-column: 4;
-     margin: 4px;
+  grid-column: 4;
+  margin: 4px;
 
 }
 
@@ -55,34 +61,40 @@ h4 {
   grid-template-rows: 30px 60px;
   justify-items: stretch;
   align-items: center;
- 
+  background-color: #13232A;
 }
+
 .link1 {
-  background-color: gray;
-   border: 2px solid black;
+  background-color: #13232A;
+/*   border: 2px solid black;*/
    grid-row: 2;
 }
 .link2 {
-  background-color: pink;
-   border: 2px solid black; 
+  background-color: #13232A;
+/*   border: 2px solid black; */
    grid-row: 2;
 }
 .link3 {
-  background-color: green;
-   border: 2px solid black;
+  background-color: #13232A;
+/*   border: 2px solid black;*/
   grid-row: 2;
 }
+
+.link:hover {
+  color: black;
+}
+
 .logobox {
-  background-color: gray;
-   border: 2px solid black;
+  background-color: #13232A;
+/*   border: 2px solid black;*/
   grid-column: 6/8;
   grid-row: 1/3;
 }
 .nav-text{
     display: inline;
     align-self: center;
-    padding: 5px;
     font-size: 1.3rem;
+    color: #FFFFFF;
 }
 .nav-icon{
   display: inline;
@@ -90,11 +102,11 @@ h4 {
 }
 /*=====header=======*/
 h1 {
-    background-color: yellow;
-    border: 2px solid black;
+    background-color: #FCF5E7;
+/*    border: 2px solid black;*/
     font-family: 'Ovo', serif;
     font-size: 2.5rem;
-    padding: 19px 5px;
+    padding: 26px 5px;
 }
 
 
@@ -102,49 +114,144 @@ h1 {
 /* ===============cards============= */
 
 .grid-card-wrapper {
+  background-color: #FCF5E7;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-   border: 2px solid black;
-}
-.card-one {
-  border: 2px solid black;
-  grid-column: 1 / 2;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 15px; 
+/*  border: 2px solid black;*/
+
 }
 
+.card {
+  border: 1px solid lightgray;
+  box-shadow: 4px 4px 11px lightgray;
+}
+.card-one {
+/*  border: 2px solid black;*/
+  grid-column: 1 / 2;
+}
+.next-icon {
+  margin: 3px;
+
+}
 .top-pic {
   display: flex;
-   border: 2px solid black;
+/*   border: 2px solid black;*/
    height: 145px;
 }
 
 .card-info-flex {
+  background-color: #FFFFFF;
   display: grid;
   grid-template-rows: 25% 20% 25% 30%;
-   border: 2px solid blue;
+ /*  border: 2px solid blue;*/
+   overflow: inherit;
 }
 .name {
-   border: 2px solid black;
+   /*border: 2px solid black;*/
    height: 70px;
+   width: 90%;
 }
 .link {
-  height: 50px;
-  margin: 10px;
-  padding: 5px;
-  background-color: lightgray;
+/*border: 2px solid black;*/
+    height: 50px;
+    width: 85%;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+}
+.link-text {
+    margin: 12px auto;
+    font-size: 1.2rem;
+
 }
 .description {
-   border: 2px solid black;
+   /*border: 2px solid black;*/
    height: 60px;
+   position: relative;
+   width: 75%;
  }
-.date {
-   border: 2px solid red;
+
+
+.price-text, .fan-favorites{
+    display: inline-block;
+    align-self: center;
+    padding: 10px;
+    
+    position: absolute;
+
+}
+
+.favorite {
+   /*border: 2px solid red;*/
    height: 75px;
+   position: relative;
+   width: 95%;
+ }
+
+.price-text {
+    top: 5px;
+    left: 80px;
+    font-size: 1.6rem;
+}
+.fan-favorites{
+  top: 11px;
+    left: 83px;
+    font-size: 1.4rem;
+    }
+
+ .dollar-icon {
+    display: inline;
+    margin: 5px;
+    position: absolute;
+    opacity: .7;
+ }
+
+  .dollar-icon2 {
+    display: inline;
+    margin: 5px;
+    position: absolute;
+    left: 30px;
+    opacity: .7;
+ }
+
+ .views {
+  background-color: #525353;
+  position: absolute;
+  left: 72%;
+    top: 5%;
+    border-radius: 20%;
+    opacity: .8;
+  }
+
+ .views p {
+color: #FFFFFF;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 8px;
+ }
+
+ .views h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 5px;
+ }
+
+ .like-icon {
+  display: inline;
+    margin: 13px 5px;
+    position: absolute;
+    left: 11px;
+    opacity: .7;
  }
 
 .top-pic {
    background-repeat: no-repeat;
    background-position: center;
   background-size: cover;
+  opacity: .8;
+  position: relative;
 }
 
  .top-pic-one{
