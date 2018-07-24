@@ -245,9 +245,6 @@ h4 {
   opacity: .7;
  }
 
-
-
-
 .top-pic {
   background-repeat: no-repeat;
   background-position: center;
@@ -357,7 +354,7 @@ h4 {
 
   .logobox {
     grid-row: 1;
-    grid-column: span 3;
+    grid-column: span 4;
   }
 
   .logopic {
