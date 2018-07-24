@@ -1,350 +1,301 @@
-<!-- ===================== -->
-<!--     * Careful of using decimal rems/ems on width/height and margin/padding
-    - experiment using pixels/percentages to hone in on precise styles
-* Tab correctly on html and css properties for readability
-* Use semantic HTML tags over divs when applicable (for example, an aside over a div)
-    - Careful of nested divs -->
-
-
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>Static Comp 2</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-    
-<body>
-<header>
-  <article class="user-login">
-    <img src="images/user.png" class="user-icon" alt="User Icon">
-    <p class="user-name">Admin Username</p>
-    <img src="images/dropdown.png" class="dropdown-icon" alt="Dropdown Icon">
-  </article>
-
+  </head>   
+  <body>
+    <header>
+      <article class="user-login">
+        <img src="images/user.png" class="user-icon" alt="User Icon">
+        <p class="user-name">Admin Username</p>
+        <img src="images/dropdown.png" class="dropdown-icon" alt="Dropdown Icon">
+      </article>
       <nav class="nav-bar-container">
-          <section class="nav-bar link1">
-              <img src="images/plate.png" class="nav-icon" alt="Plate Icon">
-              <p class="nav-text">Cuisine</p>
-          </section>
-           <section class="nav-bar link2">
-              <img src="images/star.png" class="nav-icon" alt="Star Icon">
-              <p class="nav-text">Reviews</p>
-          </section>
-           <section class="nav-bar link3">
-              <img src="images/map-pin.png" class="nav-icon" alt="Map Icon">
-              <p class="nav-text">Location</p>
-          </section>
-            <figure class="logobox">
-              <img src="images/forklogo.png" class="logopic" alt="2Eat Logo">
-              <h1 class="logo">2EAT!</h1>
-          </figure>
+        <section class="nav-bar link1">
+          <img src="images/plate.png" class="nav-icon" alt="Plate Icon">
+          <p class="nav-text">Cuisine</p>
+        </section>
+         <section class="nav-bar link2">
+            <img src="images/star.png" class="nav-icon" alt="Star Icon">
+            <p class="nav-text">Reviews</p>
+        </section>
+         <section class="nav-bar link3">
+            <img src="images/map-pin.png" class="nav-icon" alt="Map Icon">
+            <p class="nav-text">Location</p>
+        </section>
+          <figure class="logobox">
+            <img src="images/forklogo.png" class="logopic" alt="2Eat Logo">
+            <h1 class="logo">2EAT!</h1>
+        </figure>
       </nav>
+    </header>
+    <section>
+        <h1 class="title">Cuisine</h1>
+    </section>
+    <article class="grid-card-wrapper">
+        <section class="card card-one">
+          <figure class="top-pic top-pic-one">
+            <div class="next-icon" aria-label="">
+              <img src="images/arrow3.png">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>5</h3>
+            </div>
+          </figure>
 
-  </header>
-
-  <section>
-      <h1 class="title">Cuisine</h1>
-  </section>
-
-  <article class="grid-card-wrapper">
-
-      <section class="card card-one">
-        <figure class="top-pic top-pic-one">
-          <div class="next-icon" aria-label="">
-            <img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>5</h3>
-          </div>
-        </figure>
-
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>American</h4>
-            <p class="b-l-dinner">Breakfast &#8226 Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.americanfood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>American</h4>
+              <p class="b-l-dinner">Breakfast &#8226 Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.americanfood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
-      </section>
-
-
-
-      <section class="card card-two">
-        <figure class="top-pic top-pic-two">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>5</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Chinese</h4>
-            <p class="b-l-dinner">Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.chinesefood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+        <section class="card card-two">
+          <figure class="top-pic top-pic-two">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>5</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Chinese</h4>
+              <p class="b-l-dinner">Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.chinesefood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
-      </section>
 
-      <section class="card card-three">
-        <figure class="top-pic top-pic-three">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>3</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Italian</h4>
-            <p class="b-l-dinner">Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.italianfood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+        <section class="card card-three">
+          <figure class="top-pic top-pic-three">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>3</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Italian</h4>
+              <p class="b-l-dinner">Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.italianfood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
-      </section>
 
-      <section class="card card-four">
-        <figure class="top-pic top-pic-four">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>3</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Japanese</h4>
-            <p class="b-l-dinner">Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.japanesefood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+        <section class="card card-four">
+          <figure class="top-pic top-pic-four">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>3</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Japanese</h4>
+              <p class="b-l-dinner">Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.japanesefood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
-      </section>
 
-      <section class="card card-five">
-        <figure class="top-pic top-pic-five">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>2</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Mexican</h4>
-            <p class="b-l-dinner">Breakfast &#8226 Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.mexicanfood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+        <section class="card card-five">
+          <figure class="top-pic top-pic-five">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>2</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Mexican</h4>
+              <p class="b-l-dinner">Breakfast &#8226 Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.mexicanfood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
-      </section>
 
-      <section class="card card-six">
-        <figure class="top-pic top-pic-six">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>5</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Pizza</h4>
-            <p class="b-l-dinner">Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.pizzafood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+        <section class="card card-six">
+          <figure class="top-pic top-pic-six">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>5</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Pizza</h4>
+              <p class="b-l-dinner">Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.pizzafood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
-      </section>
-
-      <section class="card card-seven">
-        <figure class="top-pic top-pic-seven">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>5</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Vegan</h4>
-            <p class="b-l-dinner">Breakfast &#8226 Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.veganfood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
+        <section class="card card-seven">
+          <figure class="top-pic top-pic-seven">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>5</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Vegan</h4>
+              <p class="b-l-dinner">Breakfast &#8226 Lunch &#8226 Dinner</p>
+            </div>              
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.veganfood.com</p>
+            </div>              
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div> 
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
         </section>
+        <section class="card card-eight">
+          <figure class="top-pic top-pic-eight">
+            <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
+            </div>
+                
+            <div class="views" aria-label="">
+              <p>visits</p>
+              <h3>4</h3>
+            </div>
+          </figure>
+          <section class="card-info-flex">
+            <div class="name" aria-label="Cuisine Name"> 
+              <h4>Vietnamese</h4>
+              <p class="b-l-dinner">Lunch &#8226 Dinner</p>
+            </div>
+                
+            <div class="link" aria-label="Link to Restaurants">
+              <p class="link-text">www.vietnamesefood.com</p>
+            </div>
+                
+            <div class="description" aria-label="Price Range"> 
+              <img class="dollar-icon" src="images/cash.png">
+              <img class="dollar-icon2" src="images/cash.png">
+              <h5 class="price-text">Price</h5>
+            </div>
+                
+            <div class="favorite" aria-label="Restaurant Ratings">
+              <img class="like-icon" src="images/like.png" alt="Like Icon">
+              <h2 class="fan-favorites">Visitor Reviews</h2>
+            </div>
+          </section>
       </section>
-
-      <section class="card card-eight">
-        <figure class="top-pic top-pic-eight">
-          <div class="next-icon" aria-label=""><img src="images/arrow3.png" alt="Next Page">
-          </div>
-              
-          <div class="views" aria-label="">
-            <p>visits</p>
-            <h3>4</h3>
-          </div>
-        </figure>
-        <section class="card-info-flex">
-          <div class="name" aria-label="Cuisine Name"> 
-            <h4>Vietnamese</h4>
-            <p class="b-l-dinner">Lunch &#8226 Dinner</p>
-          </div>
-              
-          <div class="link" aria-label="Link to Restaurants">
-            <p class="link-text">www.vietnamesefood.com</p>
-          </div>
-              
-          <div class="description" aria-label="Price Range"> 
-            <img class="dollar-icon" src="images/cash.png">
-            <img class="dollar-icon2" src="images/cash.png">
-            <h5 class="price-text">Price</h5>
-          </div>
-              
-          <div class="favorite" aria-label="Restaurant Ratings">
-            <img class="like-icon" src="images/like.png" alt="Like Icon">
-            <h2 class="fan-favorites">Visitor Reviews</h2>
-          </div>
-        </section>
-      </section>
-
-  </article>
-
-
-
-
-  
-
-
-
-
-
-
-<!--   <section class="card card-two"></section>
-
-<section class="card card-three"></section>
-
-<section class="card card-four"></section>
-
-<section class="card card-five"></section>
-
-<section class="card card-six"></section>
-
-<section class="card card-seven"></section>
-
-<section class="card card-eight"></section> -->
-
-
-
+    </article>
 </body>
 </html>
