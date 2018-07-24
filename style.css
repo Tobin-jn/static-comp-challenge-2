@@ -24,6 +24,7 @@ h4 {
 }
 
 /* ====Login bar==== */
+
 .user-login {
   align-items: center;
   display: grid;
@@ -50,6 +51,7 @@ h4 {
 }
 
 /* ======= navbar======= */
+
 .nav-bar-container {
   display: grid;
   grid-template-columns: repeat(20% 20% 20% 10% 10%);
@@ -135,7 +137,7 @@ h4 {
 }
 
 .card-one {
-  grid-column: 1 / 2;
+  grid-column: 1/2;
 }
 
 .next-icon {
