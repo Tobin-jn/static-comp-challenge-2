@@ -51,14 +51,13 @@ h4 {
 .dropdown-icon {
   grid-column: 4;
   margin: 4px;
-
 }
 
 /* ======= navbar======= */
 .nav-bar-container {
   display: grid;
   grid-template-columns: repeat(20% 20% 20% 10% 10%);
-  grid-template-rows: 30px 60px;
+  grid-template-rows: 30px 85px;
   justify-items: stretch;
   align-items: center;
   background-color: #13232A;
@@ -84,11 +83,28 @@ h4 {
   color: black;
 }
 
+.logo {
+    color: #FFFFFF;
+    background-color: #13232A;
+    display: inline;
+    font-size: 4rem;
+    margin: 5px 10px 5px 0px;
+}
+
+.logopic {
+    display: inline;
+    position: absolute;
+    right: 169px;
+    bottom: 12px;
+}
+
 .logobox {
   background-color: #13232A;
 /*   border: 2px solid black;*/
   grid-column: 6/8;
   grid-row: 1/3;
+  text-align: right;
+  position: relative;
 }
 .nav-text{
     display: inline;
@@ -98,15 +114,15 @@ h4 {
 }
 .nav-icon{
   display: inline;
-  margin: -5px 10px;
+  margin: -5px 8px -5px 20px;
 }
 /*=====header=======*/
-h1 {
+.title {
     background-color: #FCF5E7;
 /*    border: 2px solid black;*/
     font-family: 'Ovo', serif;
     font-size: 2.5rem;
-    padding: 26px 5px;
+    padding: 32px 10px;
 }
 
 
@@ -134,11 +150,7 @@ h1 {
   margin: 3px;
 
 }
-.top-pic {
-  display: flex;
-/*   border: 2px solid black;*/
-   height: 145px;
-}
+
 
 .card-info-flex {
   background-color: #FFFFFF;
@@ -218,7 +230,7 @@ h1 {
  .views {
   background-color: #525353;
   position: absolute;
-  left: 72%;
+  left: 73%;
     top: 5%;
     border-radius: 20%;
     opacity: .8;
@@ -246,10 +258,14 @@ color: #FFFFFF;
     opacity: .7;
  }
 
+
+
+
 .top-pic {
    background-repeat: no-repeat;
    background-position: center;
   background-size: cover;
+     height: 145px;
   opacity: .8;
   position: relative;
 }
@@ -287,3 +303,100 @@ color: #FFFFFF;
   background-image:url(images/vietnamese.jpg);
   /*background-position: -24px -41px;*/
  }
+
+
+
+/*=============================================*/
+@media screen and (max-width: 1000px) {
+
+
+.user-login {
+    grid-template-columns: 1fr 24px 125px 36px;
+}
+
+
+
+}
+
+/*=============================================*/
+@media screen and (max-width: 700px) {
+
+  .nav-bar-container {
+      grid-template-columns: repeat(40% 20% 40%);
+      grid-template-rows: 40px 40px 40px;
+  }
+
+  .link1 {
+     grid-row: 1;
+  }
+
+  .link2 {
+     grid-row: 2;
+  }
+
+  .link3 {
+    grid-row: 3;
+  }
+
+  .logobox {
+    grid-row: 2/4;
+  }
+
+  .user-login {
+    grid-template-columns: 1fr 20px 188px 37px;
+  }
+
+  .user-name {
+      font-size: 1.3rem;
+  }
+
+  .title {
+      font-size: 3rem;
+  }
+
+}
+
+/*=============================================*/
+@media screen and (max-width: 600px) {
+
+  .grid-card-wrapper {
+    grid-template-columns: 300px;
+  }
+
+  .nav-bar-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 40px 40px 40px;
+  }
+
+   .link1 {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .link2 {
+    grid-column: 1/3; 
+    grid-row: 3;
+  }
+
+  .link3 {
+    grid-column: 1/3;
+    grid-row: 4;
+  }
+
+  .logobox {
+    grid-row: 1;
+    grid-column: span 3;
+}
+
+
+  }
+
+  .logopic {
+    right: 170px;
+  }
+
+  .nav-text{
+    font-size: 1.8rem;
+  }
+
+}
