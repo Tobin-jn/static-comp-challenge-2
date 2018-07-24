@@ -173,8 +173,8 @@ h4 {
   width: 75%;
 }
 
-
-.price-text, .fan-favorites{
+.price-text, 
+.fan-favorites{
   display: inline-block;
   align-self: center;
   padding: 10px;
